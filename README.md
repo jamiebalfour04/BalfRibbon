@@ -2,5 +2,5 @@ BalfRibbon is a simple ribbon application for the web. It was developed in 2015 
 <p><img src="ribbon.jpg" alt="Example ribbon"></p>
 
 <p>
-  You can also try out a demo version on [https://www.jamiebalfour.scot/projects/wisp/balfribbon/](my website).
+  You can also try out a demo version on <a href="https://www.jamiebalfour.scot/projects/wisp/balfribbon/">my website</a>.
 </p>
