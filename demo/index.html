@@ -1,0 +1,332 @@
+<!doctype html>
+<html>
+	<head>
+		<link href="balfribbon.css" rel="stylesheet">
+		<link href="customs.css" rel="stylesheet">
+		<!--<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>-->
+		<script src="jquery.js"></script>
+		<script src="../balfribbon.js"></script>
+		<script src="https://www.jamiebalfour.com/projects/wnp/balfjsimagefunctions.js"></script>
+		<style>
+			@font-face {
+			  font-family: 'icomoon';
+			  src:  url('fonts/fonts/icomoon.eot?ewwvic');
+			  src:  url('fonts/fonts/icomoon.eot?ewwvic#iefix') format('embedded-opentype'),
+			    url('fonts/fonts/icomoon.ttf?ewwvic') format('truetype'),
+			    url('fonts/fonts/icomoon.woff?ewwvic') format('woff'),
+			    url('fonts/fonts/icomoon.svg?ewwvic#icomoon') format('svg');
+			  font-weight: normal;
+			  font-style: normal;
+			}
+
+			[class^="icon-"], [class*=" icon-"], .balfribbon .minimise_button:after {
+			  /* use !important to prevent issues with browser extensions that change fonts */
+			  font-family: 'icomoon' !important;
+			  speak: none;
+			  font-style: normal;
+			  font-weight: normal;
+			  font-variant: normal;
+			  text-transform: none;
+			  line-height: 1;
+
+			  /* Better Font Rendering =========== */
+			  -webkit-font-smoothing: antialiased;
+			  -moz-osx-font-smoothing: grayscale;
+			}
+
+			.icon-chevron-small-down:before {
+			  content: "\e900";
+			}
+			.icon-chevron-small-up:before {
+			  content: "\e901";
+			}
+
+			body{
+				margin:0;
+				font-family:"Helvetica Neue", Helvetica, sans-serif;
+				font-weight:100;
+				overflow: hidden;
+			}
+			#rb{
+				z-index: 10
+			}
+			#workspace{
+				overflow: auto;
+				position: relative;
+
+			}
+			.balfribbon .minimise_button:after{
+				content: "\e901";
+				font-size: 26px;
+				color:#000;
+			}
+			.balfribbon.dark .minimise_button:after,
+			.balfribbon.excel .minimise_button:after,
+			.balfribbon.powerpoint .minimise_button:after,
+			.balfribbon.onenote .minimise_button:after,
+			.balfribbon.publisher .minimise_button:after{
+				color:#fff;
+			}
+			.balfribbon.minimised .minimise_button:after{
+				content: "\e900";
+			}
+			.zoomedin_1{
+				-webkit-transform:scale(1.25); /* Safari and Chrome */
+				-moz-transform:scale(1.25); /* Firefox */
+				-ms-transform:scale(1.25); /* IE 9 */
+				-o-transform:scale(1.25); /* Opera */
+				 transform:scale(1.25);
+			}
+			.zoomedin_2{
+				-webkit-transform:scale(1.5); /* Safari and Chrome */
+				-moz-transform:scale(1.5); /* Firefox */
+				-ms-transform:scale(1.5); /* IE 9 */
+				-o-transform:scale(1.5); /* Opera */
+				 transform:scale(1.5);
+			}
+			.zoomedin_3{
+				-webkit-transform:scale(2); /* Safari and Chrome */
+				-moz-transform:scale(2); /* Firefox */
+				-ms-transform:scale(2); /* IE 9 */
+				-o-transform:scale(2); /* Opera */
+				 transform:scale(2);
+			}
+		</style>
+	</head>
+	<body>
+		<div id="rb">
+			<div class="balfribbon compact">
+				<ul class="ribbon_tabs">
+					<li class="special">
+						<a data-tab="#file">File</a>
+					</li>
+					<li>
+						<a>Home</a>
+					</li>
+					<li>
+						<a>Publish</a>
+					</li>
+				</ul>
+				<div class="ribbonbar">
+					<div class="ribbon_tab">
+						<div class="group">
+							<div class="title">
+								Ribbon theme
+							</div>
+							<ul>
+								<li id="theme">
+									<label class="large">
+										<img class="icon" src="images/brush.png">
+										<span>Change theme</span>
+									</label>
+								</li>
+								<li id="round">
+									<label class="large">
+										<img class="icon" src="images/round.png">
+										<span>Rounded corners</span>
+									</label>
+								</li>
+							</ul>
+						</div>
+						<div class="group">
+							<div class="title">
+								Drawing
+							</div>
+							<ul>
+								<li id="edit">
+									<label class="large">
+										<img class="icon" src="images/pencil.png">
+										<span>Edit</span>
+									</label>
+								</li>
+							</ul>
+							<ul class="list">
+								<li id="undo">
+									<label>
+										<img class="icon" src="images/undo.png">
+										<span>Undo</span>
+									</label>
+								</li>
+								<li id="redo">
+									<label>
+										<img class="icon" src="images/redo.png">
+										<span>Redo</span>
+									</label>
+								</li>
+							</ul>
+						</div>
+						<div class="group">
+							<div class="title">
+								Application
+							</div>
+							<ul>
+								<li id="close">
+									<label class="large">
+										<img class="icon" src="images/close.png">
+										<span>Close</span>
+									</label>
+								</li>
+							</ul>
+						</div>
+						<div class="group">
+							<div class="title">
+								View
+							</div>
+							<ul>
+								<li id="zoomout">
+									<label class="large">
+										<img class="icon" src="images/zoom-out.png">
+										<span>Zoom out</span>
+									</label>
+								</li>
+								<li id="zoomin">
+									<label class="large">
+										<img class="icon" src="images/zoom-in.png">
+										<span>Zoom in</span>
+									</label>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="ribbon_tab">
+						<div class="group">
+							<div class="title">
+								Tools
+							</div>
+							<ul>
+								<li id="lock">
+									<label class="large">
+										<img class="icon" src="images/keys.png">
+										<span>Password image</span>
+									</label>
+								</li>
+								<li id="preview">
+									<label class="large">
+										<img class="icon" src="images/eye.png">
+										<span>Print preview</span>
+									</label>
+								</li>
+								<li id="select" style="width:120px">
+									<label class="large">
+										<select>
+											<option>1</option>
+											<option>2</option>
+											<option>3</option>
+											<option>4</option>
+										</select>
+										<span>Publish option</span>
+									</label>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="workspace">
+			<img src="volcano.jpg" style="width:100%;">
+		</div>
+		<script>
+			var theme = -1;
+			window.onload = function(){
+				$(".balfribbon").BalfRibbon();
+				$("#theme").on("click", function(){
+					theme++;
+					if(theme == 0){
+						$('.balfribbon').addClass("silver");
+					}
+					if(theme == 1){
+						$('.balfribbon').removeClass("silver").addClass("blue");
+					}
+					if(theme == 2){
+						$('.balfribbon').removeClass("blue").addClass("dark");
+					}
+					if(theme == 3){
+						$('.balfribbon').removeClass("dark").addClass("word");
+					}
+					if(theme == 4){
+						$('.balfribbon').removeClass("word").addClass("excel");
+					}
+					if(theme == 5){
+						$('.balfribbon').removeClass("excel").addClass("powerpoint");
+					}
+					if(theme == 6){
+						$('.balfribbon').removeClass("powerpoint").addClass("onenote");
+					}
+					if(theme == 7){
+						$('.balfribbon').removeClass("onenote").addClass("access");
+					}
+					if(theme == 8){
+						$('.balfribbon').removeClass("access").addClass("publisher");
+					}
+					if(theme == 9){
+						$('.balfribbon').removeClass("publisher").addClass("flat");
+					}
+					if(theme == 10){
+						$('.balfribbon').removeClass("flat");
+						theme = -1;
+					}
+					resize();
+				});
+				$("#round").on("click", function(){
+					$('.balfribbon').toggleClass("rounded");
+					resize();
+				});
+				$("#edit").on("click", function(){
+					alert("Editing program starting now...");
+				});
+				$("#refresh").on("click", function(){
+					window.location.reload();
+				});
+				$(document).on("click", "#close:not(.disabled)", function(e){
+					alert("Closing program now...");
+					$(this).addClass("disabled");
+				});
+				$(document).on("click", "#zoomin:not(.disabled)", function(){
+					if($("#workspace img").hasClass("zoomedin_2")){
+						$("#workspace img").removeClass("zoomedin_2");
+						$("#workspace img").addClass("zoomedin_3");
+						$(this).addClass("disabled");
+					} else if($("#workspace img").hasClass("zoomedin_1")){
+						$("#workspace img").removeClass("zoomedin_1");
+						$("#workspace img").addClass("zoomedin_2");
+					} else{
+						$("#workspace img").addClass("zoomedin_1");
+					}
+					$("#zoomout").removeClass("disabled");
+
+				});
+				$(document).on("click", "#zoomout:not(.disabled)", function(){
+					if($("#workspace img").hasClass("zoomedin_3")){
+						$("#workspace img").removeClass("zoomedin_3");
+						$("#workspace img").addClass("zoomedin_2");
+					} else if($("#workspace img").hasClass("zoomedin_2")){
+						$("#workspace img").removeClass("zoomedin_2");
+						$("#workspace img").addClass("zoomedin_1");
+					} else{
+						$("#workspace img").removeClass("zoomedin_1");
+						$(this).addClass("disabled");
+					}
+					$("#zoomin").removeClass("disabled");
+
+				});
+
+				function resize(){
+					var h = $(window).height() - $('.balfribbon').height();
+					$("#workspace").height(h);
+				}
+
+				resize();
+				$(window).on("resize", function(){
+					resize();
+				});
+				$('.balfribbon .minimise_button').on("click", function(){
+					resize();
+				});
+
+
+			};
+
+		</script>
+	</body>
+</html>

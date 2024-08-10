@@ -1,0 +1,296 @@
+
+/*2007 theme*/
+
+.balfribbon.blue>.ribbon_tabs li.special>a {
+  background: #4889e2;
+  background: -moz-linear-gradient(top, #4889e2 0%, #2989d8 30%, #2b62b2 50%, #4889e2 100%);
+  background: -webkit-linear-gradient(top, #4889e2 0%, #2989d8 30%, #2b62b2 50%, #4889e2 100%);
+  background: linear-gradient(to bottom, #4889e2 0%, #2989d8 30%, #2b62b2 50%, #4889e2 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4889e2', endColorstr='#4889e2', GradientType=0);
+  color: #fff;
+}
+
+.balfribbon.blue>.ribbon_tabs li.active a {
+  background: #D7E6F9;
+  background: -moz-linear-gradient(top, #ffffff 0%, #D7E6F9 43%);
+  background: -webkit-linear-gradient(top, #ffffff 0%, #D7E6F9 43%);
+  background: linear-gradient(to bottom, #ffffff 0%, #D7E6F9 43%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#D7E6F9', GradientType=0);
+  border: 1px #0af solid;
+}
+
+.balfribbon.blue>.ribbonbar,
+.balfribbon.blue {
+  background: #D7E6F9;
+  background: -moz-linear-gradient(#D7E6F9, #DDF4FF);
+  background: -webkit-linear-gradient(#D7E6F9, #DDF4FF);
+  background: -o-linear-gradient(#D7E6F9, #DDF4FF);
+  background: linear-gradient(#D7E6F9, #DDF4FF);
+}
+
+.balfribbon.blue>.ribbonbar {
+  border: 1px #4af solid;
+}
+
+.balfribbon.blue>.ribbonbar .title {
+  background: #C3DBF0;
+  color: #88AACC;
+  text-shadow: 0 1px 1px #fff;
+}
+
+.balfribbon.blue>.ribbon_tabs li.special>a {
+  border-color: #4af;
+}
+
+.balfribbon.blue>.ribbonbar .group {
+  border: 1px #B9CDDA solid;
+  box-shadow: 0 0 2px #aaa inset;
+}
+
+.balfribbon.blue>.ribbonbar .group:hover {
+  background: #D4E2F6;
+}
+
+.balfribbon.blue>.ribbonbar .group:hover>.title {
+  color: #336688;
+}
+
+.balfribbon.blue.minimised {
+  border-bottom: 1px #4af solid;
+}
+
+/*Dark theme*/
+
+.balfribbon.dark {
+  color: #fff;
+  background: #000;
+}
+
+.balfribbon.dark>.ribbon_tabs a,
+.balfribbon.dark>.ribbon_tabs a:visited {
+  color: #fff;
+}
+
+.balfribbon.dark>.ribbon_tabs li a:hover,
+.balfribbon.dark>.ribbon_tabs li a:visited:hover {
+  color: #ddd;
+}
+
+.balfribbon.dark>.ribbon_tabs li.active a {
+  color: #fff;
+}
+
+.balfribbon.dark>.ribbon_tabs li.special>a {
+  background: #444;
+  color: #fff;
+}
+
+.balfribbon.dark>.ribbon_tabs li.special{
+  height:35.5px;
+}
+
+.balfribbon.dark>.ribbon_tabs li.active a {
+  background: #444;
+  background: -moz-linear-gradient(top, #666 0%, #444 43%);
+  background: -webkit-linear-gradient(top, #666 0%, #444 43%);
+  background: linear-gradient(to bottom, #666 0%, #444 43%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#666666', endColorstr='#444', GradientType=0);
+  border: 1px #000 solid;
+}
+
+.balfribbon.dark>.ribbonbar {
+  background: #444;
+  background: -moz-linear-gradient(top, #444 0%, #333 43%);
+  background: -webkit-linear-gradient(top, #444 0%, #333 43%);
+  background: linear-gradient(to bottom, #444 0%, #333 43%);
+  border: 1px #000 solid;
+}
+
+.balfribbon.dark>.ribbonbar .title {
+  background: #000;
+  color: #ddd;
+  text-shadow: 0 1px 1px #777;
+}
+
+.balfribbon.dark>.ribbonbar .group {
+  border: 1px #777 solid;
+}
+
+.balfribbon.dark>.ribbonbar .group:hover {
+  background: #333;
+}
+
+.balfribbon.dark.minimised {
+  border-bottom: 1px #000 solid;
+}
+
+/*2010*/
+
+.balfribbon.silver>.ribbonbar {
+  background: rgb(255, 255, 255);
+  background: -moz-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(235, 237, 242, 1) 100%);
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(235, 237, 242, 1) 100%);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(235, 237, 242, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ebedf2', GradientType=0);
+}
+
+.balfribbon.silver>.ribbonbar .group:hover .title {
+  color: #777;
+}
+
+.balfribbon.silver>.ribbon_tabs li.active a {
+  background: #ffffff;
+  background: -moz-linear-gradient(top, #eeeeee 0%, #ffffff 43%);
+  background: -webkit-linear-gradient(top, #eeeeee 0%, #ffffff 43%);
+  background: linear-gradient(to bottom, #eeeeee 0%, #ffffff 43%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#ffffff', GradientType=0);
+}
+
+.balfribbon.silver.minimised {
+  border-bottom: 1px #ddd solid;
+}
+
+/*Flat*/
+
+.balfribbon.flat>.ribbon_tabs li {
+  margin: 0 1px;
+}
+
+.balfribbon.flat>.ribbon_tabs li.special>a,
+.balfribbon.flat>.ribbon_tabs li.active a,
+.balfribbon.flat .ribbonbar {
+  box-shadow: none;
+}
+
+.balfribbon.flat>.ribbon_tabs li.special>a {
+  background: #f60;
+  border-color: transparent;
+}
+
+.balfribbon.flat>.ribbon_tabs li a {
+  border: 1px #ddd solid;
+  background: #ddd;
+}
+
+.balfribbon.flat>.ribbonbar,
+.balfribbon.flat>.ribbon_tabs li.active a,
+.balfribbon.flat>.ribbon_tabs li.active:hover a {
+  background: #f2f2f2;
+  color:#000;
+}
+.balfribbon.flat>.ribbon_tabs li:hover a {
+  background: #aaa;
+  color: #fff;
+}
+
+.balfribbon.flat>.ribbon_tabs li.special{
+  height: 34.5px;
+}
+
+.balfribbon.flat>.ribbon_tabs li.special:hover>a {
+  background: #ffa500;
+  color: #fff;
+}
+
+.balfribbon.flat.minimised {
+  border-bottom: 1px solid #aaa;
+}
+
+$custom_theme : false;
+
+$theme_name : "flater";
+$float_special_tab_over : false;
+$ribbon_padding : 0;
+$ribbon_background : #2b579a;
+$ribbon_tab_margin : 0 1px;
+$ribbon_shadow : 0 0 2px #000;
+$ribbon_special_tab_background : #2b579a;
+$ribbon_special_tab_foreground : #fff;
+$ribbon_tab_forecolor : #fff;
+$ribbon_tab_border : 1px transparent solid;
+$ribbon_tab_active_background : #f2f2f2;
+$ribbon_tab_active_foreground : #000;
+$ribbon_tab_hover_background : #144084;
+$ribbon_tab_hover_foreground : #fff;
+$ribbon_special_tab_hover_background : #4879c6;
+$ribbon_special_tab_hover_foreground : #fff;
+$ribbon_minimised_bottom_border: 1px solid #0af;
+$ribbon_item_hover_background : linear-gradient(#fff 10%, #ccc);
+$ribbon_item_hover_border_radius : 3px;
+$ribbon_item_hover_border_color : #ddd;
+
+@if($custom_theme == true){
+  .balfribbon.#{$theme_name} {
+    padding: $ribbon_padding;
+    background: $ribbon_background;
+  }
+
+  .balfribbon.#{$theme_name} .ribbon_tabs{
+    background: $ribbon_background;
+  }
+
+  .balfribbon.#{$theme_name}>.ribbon_tabs li {
+    margin: $ribbon_tab_margin;
+  }
+
+  @if($float_special_tab_over == true){
+    .balfribbon.#{$theme_name}>.ribbon_tabs li.special{
+      height:35.5px;
+    }
+  }
+
+
+  .balfribbon.#{$theme_name}>.ribbon_tabs li.special>a,
+  .balfribbon.#{$theme_name}>.ribbon_tabs li.active a,
+  .balfribbon.#{$theme_name} .ribbonbar {
+    -moz-box-shadow: $ribbon_shadow;
+    -webkit-box-shadow: $ribbon_shadow;
+    -ms-box-shadow: $ribbon_shadow;
+    -o-box-shadow: $ribbon_shadow;
+    box-shadow: $ribbon_shadow;
+  }
+
+  .balfribbon.#{$theme_name}>.ribbon_tabs li.special>a {
+    background: $ribbon_special_tab_background;
+    color: $ribbon_special_tab_foreground;
+    border-color: transparent;
+  }
+
+  .balfribbon.#{$theme_name}>.ribbon_tabs li a {
+    border: $ribbon_tab_border;
+  }
+
+  .balfribbon.#{$theme_name}>.ribbonbar,
+  .balfribbon.#{$theme_name}>.ribbon_tabs li.active a,
+  .balfribbon.#{$theme_name}>.ribbon_tabs li.active:hover a {
+    background: $ribbon_tab_active_background;
+    color: $ribbon_tab_active_foreground;
+  }
+
+  .balfribbon.#{$theme_name}>.ribbon_tabs li:hover a {
+    background: $ribbon_tab_hover_background;
+    color: $ribbon_tab_hover_foreground;
+  }
+
+  .balfribbon.#{$theme_name}>.ribbon_tabs li.special:hover>a {
+    background: $ribbon_special_tab_hover_background;
+    color: $ribbon_special_tab_hover_foreground;
+  }
+
+  .balfribbon.#{$theme_name}.minimised {
+    border-bottom: $ribbon_minimised_bottom_border;
+  }
+
+  .balfribbon.#{$theme_name}>.ribbon_tabs a,
+  .balfribbon.#{$theme_name}>.ribbon_tabs a:active,
+  .balfribbon.#{$theme_name}>.ribbon_tabs a:visited {
+    cursor: pointer;
+    color: $ribbon_tab_forecolor;
+  }
+
+  .balfribbon.#{$theme_name} .ribbonbar .group > ul > li:hover > label {
+    background: $ribbon_item_hover_background;
+    border-color: $ribbon_item_hover_border_color;
+    border-radius: $ribbon_item_hover_border_radius
+  }
+}

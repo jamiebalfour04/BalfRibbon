@@ -1,0 +1,510 @@
+.balfribbon {
+  position: relative;
+  padding: 15px 20px;
+  padding-top: 40px;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -webkit-text-size-adjust: none;
+  -webkit-text-size-adjust: 100%;
+}
+
+.balfribbon .list .glyph {
+  display: inline;
+  margin-bottom: 0;
+  margin-right: 2px;
+}
+
+.ribbonbar .group.disabled > ul > li label, .ribbonbar .group > ul > li.disabled label {
+  background: transparent !important;
+  opacity: 0.3 !important;
+  border: 1px transparent solid !important;
+}
+
+.balfribbon li.disabled label {
+  cursor: default;
+}
+
+.balfribbon > .ribbon_tabs {
+  z-index: 2;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 100%;
+  height: 38px;
+  padding: 5px 20px;
+  top: 3px;
+  left: 0;
+  right: 0;
+  overflow-y: hidden;
+  color: #333;
+}
+
+.balfribbon > .ribbon_tabs li {
+  padding: 0;
+  height: 34px;
+  line-height: 33px;
+  overflow: hidden;
+  position: relative;
+  float: left;
+  margin: 2px;
+  top: -3px;
+  left: 5px;
+  margin-top: 0 !important;
+  margin-bottom: -1px !important;
+}
+
+.balfribbon > .ribbon_tabs li.active {
+  height: 36px;
+}
+
+.balfribbon > .ribbon_tabs li.special {
+  margin-left: 5px;
+  margin-bottom: 0;
+}
+
+.balfribbon > .ribbon_tabs li.special > a {
+  background: #4889e2;
+  color: #fff;
+  padding-top: 0;
+  border: 1px #333 solid;
+  border-bottom: 1px transparent solid !important;
+}
+
+.balfribbon > .ribbon_tabs li:hover a {
+  color: #333;
+}
+
+.balfribbon > .ribbon_tabs a {
+  text-decoration: none;
+  display: block;
+  font-size: 15px;
+  padding: 1px 20px;
+  outline: 0;
+  font-weight: 400;
+  white-space: nowrap;
+  border: 1px transparent solid;
+}
+
+.balfribbon > .ribbon_tabs a,
+.balfribbon > .ribbon_tabs a:active,
+.balfribbon > .ribbon_tabs a:visited {
+  cursor: pointer;
+  color: inherit;
+}
+
+.balfribbon > .ribbon_tabs li.active a {
+  background: #f8f8f8;
+  background: -moz-linear-gradient(top, #eeeeee 0%, #f8f8f8 43%);
+  background: -webkit-linear-gradient(top, #eeeeee 0%, #f8f8f8 43%);
+  background: linear-gradient(to bottom, #eeeeee 0%, #f8f8f8 43%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#eeeeee", endColorstr="#f8f8f8", GradientType=0);
+  border: 1px #ccc solid;
+  box-shadow: 0 0 3px #aaa;
+  color: #000;
+}
+
+.balfribbon > .ribbonbar {
+  background: #f8f8f8;
+  display: block;
+  position: relative;
+  font-family: "Arial";
+  border: 1px #ccc solid;
+  box-shadow: 0 0 3px #aaa;
+}
+
+.ribbonbar .ribbon_tab {
+  padding: 5px;
+  display: none;
+}
+
+.ribbonbar .group {
+  border-right: 1.5px #ddd solid;
+  display: inline-block;
+  position: relative;
+  padding: 5px;
+  font-size: 12px;
+  margin: 7px 3px;
+  margin-right: -4px;
+  vertical-align: top;
+  padding-bottom: 25px;
+}
+
+.ribbonbar .group > .title {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: #aaa;
+  font-weight: 100;
+  text-align: center;
+  font-size: 120%;
+  z-index: 10;
+}
+
+.balfribbon.fixed_height .group {
+  height: 102px;
+}
+
+.ribbonbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+
+.ribbonbar .group > ul > li {
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+}
+
+.ribbonbar .group > ul > li label {
+  cursor: pointer;
+  display: block;
+  border: 1px transparent solid;
+  height: 70px;
+  width: 70px;
+}
+
+.ribbonbar .group > ul > li label.large {
+  width: 80px;
+  height: 80px;
+}
+
+.ribbonbar .group > ul > li > label span {
+  vertical-align: middle;
+}
+
+.ribbonbar .group > ul > li > label.large {
+  padding: 5px;
+}
+
+.ribbonbar .group > ul > li > label.large span {
+  display: block;
+}
+
+.ribbonbar .group > ul li > label .icon {
+  padding-bottom: 5px;
+  display: block;
+  margin: auto;
+  height: 24px;
+  width: auto;
+}
+
+.ribbonbar .group > ul li > label.large .icon {
+  height: 36px;
+}
+
+.ribbonbar .group > ul > li:hover > label {
+  background: rgba(0, 170, 255, 0.3);
+  border-color: #aaa;
+}
+
+.ribbonbar .group ul.list {
+  vertical-align: top;
+}
+
+.balfribbon .ribbonbar .group ul.list li {
+  display: list-item;
+  text-align: left;
+  width: auto;
+  height: auto;
+  max-width: 200px;
+  font-size: 12px;
+  margin: 2px 0;
+}
+
+.balfribbon .ribbonbar .group ul.list li label {
+  padding: 3px 10px;
+  width: auto;
+  height: auto;
+  min-width: 100%;
+}
+
+.ribbonbar .group > ul.list li label .icon, .ribbonbar .group > ul.list li label .glyph {
+  display: inline;
+  padding-bottom: 0;
+  height: 16px;
+  width: 16px;
+  vertical-align: middle;
+}
+
+.balfribbon .group ul.list li label {
+  display: inline-block;
+  padding: 2px 3px;
+}
+
+.balfribbon .minimise_button {
+  position: absolute;
+  top: 6px;
+  right: 10px;
+  padding-top: 1px;
+  text-align: center;
+  -moz-text-shadow: 0 0 2px;
+  -webkit-text-shadow: 0 0 2px;
+  -ms-text-shadow: 0 0 2px;
+  -o-text-shadow: 0 0 2px;
+  text-shadow: 0 0 2px;
+  z-index: 99;
+  cursor: pointer;
+  color: #000;
+}
+
+.balfribbon .group > ul > li .large .glyph {
+  line-height: 34px;
+}
+
+.balfribbon .group > ul.large .glyph {
+  font-size: 24px;
+  line-height: 24px;
+  vertical-align: middle;
+}
+
+/*BalfPick integration*/
+.balfribbon .balfpick {
+  margin: 10px 3px;
+  color: #000;
+  background: #fff;
+}
+
+/*Minimised*/
+.balfribbon.minimised {
+  padding-bottom: 0 !important;
+}
+
+.balfribbon.minimised.hidden {
+  min-height: 0 !important;
+}
+
+.balfribbon.minimised.open .ribbonbar {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  right: 0;
+}
+
+.balfribbon.minimised.hidden .ribbonbar {
+  display: none;
+}
+
+.balfribbon .group ul.list.large li label {
+  padding: 1px 10px;
+}
+
+/*Rounded style*/
+.balfribbon.rounded > .ribbonbar {
+  border-radius: 3px;
+}
+
+.balfribbon.rounded_groups > .ribbonbar .group {
+  border-radius: 5px;
+}
+
+.balfribbon.rounded_groups .ribbonbar .group > .title {
+  border-radius: 0 0 5px 5px;
+}
+
+.balfribbon.rounded > .ribbon_tabs li,
+.balfribbon.rounded > .ribbon_tabs li.special > a,
+.balfribbon.rounded > .ribbon_tabs li.active a {
+  border-radius: 3px 3px 0 0;
+}
+
+/*2007 theme*/
+.balfribbon.blue > .ribbon_tabs li.special > a {
+  background: #4889e2;
+  background: -moz-linear-gradient(top, #4889e2 0%, #2989d8 30%, #2b62b2 50%, #4889e2 100%);
+  background: -webkit-linear-gradient(top, #4889e2 0%, #2989d8 30%, #2b62b2 50%, #4889e2 100%);
+  background: linear-gradient(to bottom, #4889e2 0%, #2989d8 30%, #2b62b2 50%, #4889e2 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#4889e2", endColorstr="#4889e2", GradientType=0);
+  color: #fff;
+}
+
+.balfribbon.blue > .ribbon_tabs li.active a {
+  background: #D7E6F9;
+  background: -moz-linear-gradient(top, #ffffff 0%, #D7E6F9 43%);
+  background: -webkit-linear-gradient(top, #ffffff 0%, #D7E6F9 43%);
+  background: linear-gradient(to bottom, #ffffff 0%, #D7E6F9 43%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#ffffff", endColorstr="#D7E6F9", GradientType=0);
+  border: 1px #0af solid;
+}
+
+.balfribbon.blue > .ribbonbar,
+.balfribbon.blue {
+  background: #D7E6F9;
+  background: -moz-linear-gradient(#D7E6F9, #DDF4FF);
+  background: -webkit-linear-gradient(#D7E6F9, #DDF4FF);
+  background: -o-linear-gradient(#D7E6F9, #DDF4FF);
+  background: linear-gradient(#D7E6F9, #DDF4FF);
+}
+
+.balfribbon.blue > .ribbonbar {
+  border: 1px #4af solid;
+}
+
+.balfribbon.blue > .ribbonbar .title {
+  background: #C3DBF0;
+  color: #88AACC;
+  text-shadow: 0 1px 1px #fff;
+}
+
+.balfribbon.blue > .ribbon_tabs li.special > a {
+  border-color: #4af;
+}
+
+.balfribbon.blue > .ribbonbar .group {
+  border: 1px #B9CDDA solid;
+  box-shadow: 0 0 2px #aaa inset;
+}
+
+.balfribbon.blue > .ribbonbar .group:hover {
+  background: #D4E2F6;
+}
+
+.balfribbon.blue > .ribbonbar .group:hover > .title {
+  color: #336688;
+}
+
+.balfribbon.blue.minimised {
+  border-bottom: 1px #4af solid;
+}
+
+/*Dark theme*/
+.balfribbon.dark {
+  color: #fff;
+  background: #000;
+}
+
+.balfribbon.dark > .ribbon_tabs a,
+.balfribbon.dark > .ribbon_tabs a:visited {
+  color: #fff;
+}
+
+.balfribbon.dark > .ribbon_tabs li a:hover,
+.balfribbon.dark > .ribbon_tabs li a:visited:hover {
+  color: #ddd;
+}
+
+.balfribbon.dark > .ribbon_tabs li.active a {
+  color: #fff;
+}
+
+.balfribbon.dark > .ribbon_tabs li.special > a {
+  background: #444;
+  color: #fff;
+}
+
+.balfribbon.dark > .ribbon_tabs li.special {
+  height: 35.5px;
+}
+
+.balfribbon.dark > .ribbon_tabs li.active a {
+  background: #444;
+  background: -moz-linear-gradient(top, #666 0%, #444 43%);
+  background: -webkit-linear-gradient(top, #666 0%, #444 43%);
+  background: linear-gradient(to bottom, #666 0%, #444 43%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#666666", endColorstr="#444", GradientType=0);
+  border: 1px #000 solid;
+}
+
+.balfribbon.dark > .ribbonbar {
+  background: #444;
+  background: -moz-linear-gradient(top, #444 0%, #333 43%);
+  background: -webkit-linear-gradient(top, #444 0%, #333 43%);
+  background: linear-gradient(to bottom, #444 0%, #333 43%);
+  border: 1px #000 solid;
+}
+
+.balfribbon.dark > .ribbonbar .title {
+  background: #000;
+  color: #ddd;
+  text-shadow: 0 1px 1px #777;
+}
+
+.balfribbon.dark > .ribbonbar .group {
+  border: 1px #777 solid;
+}
+
+.balfribbon.dark > .ribbonbar .group:hover {
+  background: #333;
+}
+
+.balfribbon.dark.minimised {
+  border-bottom: 1px #000 solid;
+}
+
+/*2010*/
+.balfribbon.silver > .ribbonbar {
+  background: white;
+  background: -moz-linear-gradient(top, white 0%, #ebedf2 100%);
+  background: -webkit-linear-gradient(top, white 0%, #ebedf2 100%);
+  background: linear-gradient(to bottom, white 0%, #ebedf2 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#ffffff", endColorstr="#ebedf2", GradientType=0);
+}
+
+.balfribbon.silver > .ribbonbar .group:hover .title {
+  color: #777;
+}
+
+.balfribbon.silver > .ribbon_tabs li.active a {
+  background: #ffffff;
+  background: -moz-linear-gradient(top, #eeeeee 0%, #ffffff 43%);
+  background: -webkit-linear-gradient(top, #eeeeee 0%, #ffffff 43%);
+  background: linear-gradient(to bottom, #eeeeee 0%, #ffffff 43%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#eeeeee", endColorstr="#ffffff", GradientType=0);
+}
+
+.balfribbon.silver.minimised {
+  border-bottom: 1px #ddd solid;
+}
+
+/*Flat*/
+.balfribbon.flat > .ribbon_tabs li {
+  margin: 0 1px;
+}
+
+.balfribbon.flat > .ribbon_tabs li.special > a,
+.balfribbon.flat > .ribbon_tabs li.active a,
+.balfribbon.flat .ribbonbar {
+  box-shadow: none;
+}
+
+.balfribbon.flat > .ribbon_tabs li.special > a {
+  background: #f60;
+  border-color: transparent;
+}
+
+.balfribbon.flat > .ribbon_tabs li a {
+  border: 1px #ddd solid;
+  background: #ddd;
+}
+
+.balfribbon.flat > .ribbonbar,
+.balfribbon.flat > .ribbon_tabs li.active a,
+.balfribbon.flat > .ribbon_tabs li.active:hover a {
+  background: #f2f2f2;
+  color: #000;
+}
+
+.balfribbon.flat > .ribbon_tabs li:hover a {
+  background: #aaa;
+  color: #fff;
+}
+
+.balfribbon.flat > .ribbon_tabs li.special {
+  height: 34.5px;
+}
+
+.balfribbon.flat > .ribbon_tabs li.special:hover > a {
+  background: #ffa500;
+  color: #fff;
+}
+
+.balfribbon.flat.minimised {
+  border-bottom: 1px solid #aaa;
+}
+
+/*# sourceMappingURL=balfribbon.css.map */

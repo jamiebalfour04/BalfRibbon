@@ -1,0 +1,374 @@
+
+
+.balfribbon.word {
+  padding: 0;
+  background: #2b579a;
+}
+
+.balfribbon.word .ribbon_tabs {
+  background: #2b579a;
+}
+
+.balfribbon.word > .ribbon_tabs li {
+  margin: 0 1px;
+}
+
+.balfribbon.word > .ribbon_tabs li.special > a,
+.balfribbon.word > .ribbon_tabs li.active a,
+.balfribbon.word .ribbonbar {
+  -moz-box-shadow: 0 0 2px #000;
+  -webkit-box-shadow: 0 0 2px #000;
+  -ms-box-shadow: 0 0 2px #000;
+  -o-box-shadow: 0 0 2px #000;
+  box-shadow: 0 0 2px #000;
+}
+
+.balfribbon.word > .ribbon_tabs li.special > a {
+  background: #2b579a;
+  color: #fff;
+  border-color: transparent;
+}
+
+.balfribbon.word > .ribbon_tabs li a {
+  border: 1px transparent solid;
+}
+
+.balfribbon.word > .ribbonbar,
+.balfribbon.word > .ribbon_tabs li.active a,
+.balfribbon.word > .ribbon_tabs li.active:hover a {
+  background: #f2f2f2;
+  color: #000;
+}
+
+.balfribbon.word > .ribbon_tabs li:hover a {
+  background: #144084;
+  color: #fff;
+}
+
+.balfribbon.word > .ribbon_tabs li.special:hover > a {
+  background: #4879c6;
+  color: #fff;
+}
+
+.balfribbon.word.minimised {
+  border-bottom: 1px solid #0af;
+}
+
+.balfribbon.word > .ribbon_tabs a,
+.balfribbon.word > .ribbon_tabs a:active,
+.balfribbon.word > .ribbon_tabs a:visited {
+  cursor: pointer;
+  color: #fff;
+}
+
+.balfribbon.excel {
+  padding: 0;
+  background: #227447;
+}
+
+.balfribbon.excel .ribbon_tabs {
+  background: #227447;
+}
+
+.balfribbon.excel>.ribbon_tabs li {
+  margin: 0 1px;
+}
+
+.balfribbon.excel>.ribbon_tabs li.special>a,
+.balfribbon.excel>.ribbon_tabs li.active a,
+.balfribbon.excel .ribbonbar {
+  -moz-box-shadow: 0 0 2px #000;
+  -webkit-box-shadow: 0 0 2px #000;
+  -ms-box-shadow: 0 0 2px #000;
+  -o-box-shadow: 0 0 2px #000;
+  box-shadow: 0 0 2px #000;
+}
+
+.balfribbon.excel>.ribbon_tabs li.special>a {
+  background: #227447;
+  color: #fff;
+  border-color: transparent;
+}
+
+.balfribbon.excel>.ribbon_tabs li a {
+  border: 1px transparent solid;
+}
+
+.balfribbon.excel>.ribbonbar,
+.balfribbon.excel>.ribbon_tabs li.active a,
+.balfribbon.excel>.ribbon_tabs li.active:hover a {
+  background: #f2f2f2;
+  color: #000;
+}
+
+.balfribbon.excel>.ribbon_tabs li:hover a {
+  background: #064824;
+  color: #fff;
+}
+
+.balfribbon.excel>.ribbon_tabs li.special:hover>a {
+  background: #209b58;
+  color: #fff;
+}
+
+.balfribbon.excel.minimised {
+  border-bottom: 1px solid #0f0;
+}
+
+.balfribbon.excel>.ribbon_tabs a,
+.balfribbon.excel>.ribbon_tabs a:active,
+.balfribbon.excel>.ribbon_tabs a:visited {
+  cursor: pointer;
+  color: #fff;
+}
+
+.balfribbon.powerpoint {
+  padding: 0;
+  background: #b6472b;
+}
+
+.balfribbon.powerpoint .ribbon_tabs {
+  background: #b6472b;
+}
+
+.balfribbon.powerpoint>.ribbon_tabs li {
+  margin: 0 1px;
+}
+
+.balfribbon.powerpoint>.ribbon_tabs li.special>a,
+.balfribbon.powerpoint>.ribbon_tabs li.active a,
+.balfribbon.powerpoint .ribbonbar {
+  -moz-box-shadow: 0 0 2px #000;
+  -webkit-box-shadow: 0 0 2px #000;
+  -ms-box-shadow: 0 0 2px #000;
+  -o-box-shadow: 0 0 2px #000;
+  box-shadow: 0 0 2px #000;
+}
+
+.balfribbon.powerpoint>.ribbon_tabs li.special>a {
+  background: #b6472b;
+  color: #fff;
+  border-color: transparent;
+}
+
+.balfribbon.powerpoint>.ribbon_tabs li a {
+  border: 1px transparent solid;
+}
+
+.balfribbon.powerpoint>.ribbonbar,
+.balfribbon.powerpoint>.ribbon_tabs li.active a,
+.balfribbon.powerpoint>.ribbon_tabs li.active:hover a {
+  background: #f2f2f2;
+  color: #000;
+}
+
+.balfribbon.powerpoint>.ribbon_tabs li:hover a {
+  background: #dd6e53;
+  color: #fff;
+}
+
+.balfribbon.powerpoint>.ribbon_tabs li.special:hover>a {
+  background: #fe3d0d;
+  color: #fff;
+}
+
+.balfribbon.powerpoint.minimised {
+  border-bottom: 1px solid #f60;
+}
+
+.balfribbon.powerpoint>.ribbon_tabs a,
+.balfribbon.powerpoint>.ribbon_tabs a:active,
+.balfribbon.powerpoint>.ribbon_tabs a:visited {
+  cursor: pointer;
+  color: #fff;
+}
+
+.balfribbon.onenote {
+  padding: 0;
+  background: #7f3b7a;
+}
+
+.balfribbon.onenote .ribbon_tabs {
+  background: #7f3b7a;
+}
+
+.balfribbon.onenote>.ribbon_tabs li {
+  margin: 0 1px;
+}
+
+.balfribbon.onenote>.ribbon_tabs li.special>a,
+.balfribbon.onenote>.ribbon_tabs li.active a,
+.balfribbon.onenote .ribbonbar {
+  -moz-box-shadow: 0 0 2px #000;
+  -webkit-box-shadow: 0 0 2px #000;
+  -ms-box-shadow: 0 0 2px #000;
+  -o-box-shadow: 0 0 2px #000;
+  box-shadow: 0 0 2px #000;
+}
+
+.balfribbon.onenote>.ribbon_tabs li.special>a {
+  background: #7f3b7a;
+  color: #fff;
+  border-color: transparent;
+}
+
+.balfribbon.onenote>.ribbon_tabs li a {
+  border: 1px transparent solid;
+}
+
+.balfribbon.onenote>.ribbonbar,
+.balfribbon.onenote>.ribbon_tabs li.active a,
+.balfribbon.onenote>.ribbon_tabs li.active:hover a {
+  background: #f2f2f2;
+  color: #000;
+}
+
+.balfribbon.onenote>.ribbon_tabs li:hover a {
+  background: #62265d;
+  color: #fff;
+}
+
+.balfribbon.onenote>.ribbon_tabs li.special:hover>a {
+  background: #aa299f;
+  color: #fff;
+}
+
+.balfribbon.onenote.minimised {
+  border-bottom: 1px solid #f06;
+}
+
+.balfribbon.onenote>.ribbon_tabs a,
+.balfribbon.onenote>.ribbon_tabs a:active,
+.balfribbon.onenote>.ribbon_tabs a:visited {
+  cursor: pointer;
+  color: #fff;
+}
+
+.balfribbon.publisher {
+  padding: 0;
+  background: #077568;
+}
+
+.balfribbon.publisher .ribbon_tabs {
+  background: #077568;
+}
+
+.balfribbon.publisher>.ribbon_tabs li {
+  margin: 0 1px;
+}
+
+.balfribbon.publisher>.ribbon_tabs li.special>a,
+.balfribbon.publisher>.ribbon_tabs li.active a,
+.balfribbon.publisher .ribbonbar {
+  -moz-box-shadow: 0 0 2px #000;
+  -webkit-box-shadow: 0 0 2px #000;
+  -ms-box-shadow: 0 0 2px #000;
+  -o-box-shadow: 0 0 2px #000;
+  box-shadow: 0 0 2px #000;
+}
+
+.balfribbon.publisher>.ribbon_tabs li.special>a {
+  background: #077568;
+  color: #fff;
+  border-color: transparent;
+}
+
+.balfribbon.publisher>.ribbon_tabs li a {
+  border: 1px transparent solid;
+}
+
+.balfribbon.publisher>.ribbonbar,
+.balfribbon.publisher>.ribbon_tabs li.active a,
+.balfribbon.publisher>.ribbon_tabs li.active:hover a {
+  background: #f2f2f2;
+  color: #000;
+}
+
+.balfribbon.publisher>.ribbon_tabs li:hover a {
+  background: #5c9594;
+  color: #fff;
+}
+
+.balfribbon.publisher>.ribbon_tabs li.special:hover>a {
+  background: #06a592;
+  color: #fff;
+}
+
+.balfribbon.publisher.minimised {
+  border-bottom: 1px solid #08b68a;
+}
+
+.balfribbon.publisher>.ribbon_tabs a,
+.balfribbon.publisher>.ribbon_tabs a:active,
+.balfribbon.publisher>.ribbon_tabs a:visited {
+  cursor: pointer;
+  color: #fff;
+}
+
+
+.balfribbon.access {
+  padding: 0;
+  background: #a4373a;
+}
+
+.balfribbon.access .ribbon_tabs {
+  background: #a4373a;
+}
+
+.balfribbon.access > .ribbon_tabs li {
+  margin: 0 1px;
+}
+
+.balfribbon.access > .ribbon_tabs li.special > a,
+.balfribbon.access > .ribbon_tabs li.active a,
+.balfribbon.access .ribbonbar {
+  -moz-box-shadow: 0 0 2px #000;
+  -webkit-box-shadow: 0 0 2px #000;
+  -ms-box-shadow: 0 0 2px #000;
+  -o-box-shadow: 0 0 2px #000;
+  box-shadow: 0 0 2px #000;
+}
+
+.balfribbon.access > .ribbon_tabs li.special > a {
+  background: #a4373a;
+  color: #fff;
+  border-color: transparent;
+}
+
+.balfribbon.access > .ribbon_tabs li a {
+  border: 1px transparent solid;
+}
+
+.balfribbon.access > .ribbonbar,
+.balfribbon.access > .ribbon_tabs li.active a,
+.balfribbon.access > .ribbon_tabs li.active:hover a {
+  background: #f2f2f2;
+  color: #000;
+}
+
+.balfribbon.access > .ribbon_tabs li:hover a {
+  background: #8f3033;
+  color: #fff;
+}
+
+.balfribbon.access > .ribbon_tabs li.special:hover > a {
+  background: #d7181e;
+  color: #fff;
+}
+
+.balfribbon.access.minimised {
+  border-bottom: 1px solid #c3286a;
+}
+
+.balfribbon.access > .ribbon_tabs a,
+.balfribbon.access > .ribbon_tabs a:active,
+.balfribbon.access > .ribbon_tabs a:visited {
+  cursor: pointer;
+  color: #fff;
+}
+
+.balfribbon.access .ribbonbar .group:not(.disabled) > ul > li:not(.disabled):hover > label {
+  background: linear-gradient(#fff 10%, #ccc);
+  border-color: #ddd;
+  border-radius: 3px;
+}
